@@ -25,4 +25,25 @@
 .faq p{
     background-color: #454545;    
     padding: 16px;
-    }
+}
+
+summary {
+        cursor: pointer;
+        font-size: 18px;
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        padding-right: 20px;
+}
+
+summary::after {
+    content: "+";
+    font-size: 30px;
+    position: absolute;
+    right: -650px;
+    top: 0;
+  }
+
+  details[open] summary::after {
+    content: "x";
+  }
